@@ -1,0 +1,3 @@
+# Keep original source videos out of the website repository and deployment.
+/videos/
+/vlc-convert.log
