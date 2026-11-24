@@ -68,17 +68,21 @@ section{padding:82px 0;border-top-color:var(--line)}h2{font-size:clamp(32px,4.4v
 .project-group .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 #instagram-reels .grid{grid-template-columns:repeat(3,minmax(0,1fr))}
 #podcast-reels .grid,#storytelling .grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:760px){.project-group .grid,#instagram-reels .grid,#podcast-reels .grid,#storytelling .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
 .video-project{position:relative;aspect-ratio:9/16;width:100%;justify-self:center;padding:0;min-height:0;overflow:hidden;border:1px solid var(--line);background:#08090d;border-radius:20px}
 .video-project .project-video{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto;object-fit:cover;border:0;border-radius:inherit;margin:0;transition:transform .45s,filter .45s}
 #long-videos .video-project{aspect-ratio:16/9;width:100%}
 .project-group .video-project:hover .project-video{transform:scale(1.025);filter:brightness(.78)}
 .video-project>.project-info{position:absolute;left:12px;right:12px;top:12px;z-index:3;pointer-events:none;display:flex;flex-direction:column;align-items:flex-start;gap:7px}.video-project .tag{background:#0c0d12d9;border-color:#ffffff40;backdrop-filter:blur(8px);color:#f7f7fb;padding:7px 11px}.video-project .project-caption{margin:0;padding:6px 9px;max-width:100%;border-radius:9px;background:#0c0d12d9;backdrop-filter:blur(8px);color:#f7f7fb;font-size:11px;line-height:1.35}
 .video-project:after{pointer-events:none;border-color:#ffffff16}
-@media(max-width:520px){.project-group .grid{grid-template-columns:1fr}}
+@media(max-width:520px){.project-group .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
 .hero{min-height:min(760px,calc(100svh - 62px));padding:clamp(52px,8vw,100px) 0}
 .hero:before{content:"";position:absolute;width:clamp(220px,34vw,390px);aspect-ratio:1;right:8%;top:50%;border:1px solid #39d9e829;border-radius:50%;background:radial-gradient(circle at 50% 50%,#9b5cff12 0 24%,transparent 25%),repeating-radial-gradient(circle,#39d9e820 0 1px,transparent 1px 34px);box-shadow:inset 0 0 55px #9b5cff12;pointer-events:none;animation:hero-orbit 18s linear infinite}
-.hero-layout{display:grid;grid-template-columns:1fr;align-items:center;position:relative;z-index:1;max-width:900px}
+.hero-layout{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(300px,.92fr);gap:clamp(26px,5vw,62px);align-items:center;position:relative;z-index:1;max-width:1120px}
 .hero-copy{min-width:0}.hero-copy h1{font-size:clamp(46px,7vw,88px)}.hero-copy .lead{max-width:600px}
+.hero-visual{position:relative;isolation:isolate;min-width:0;aspect-ratio:4/3;overflow:hidden;border:1px solid transparent;border-radius:24px;background:linear-gradient(#10121a,#10121a) padding-box,linear-gradient(140deg,#39d9e8b8,#9b5cffd9 52%,#ffffff24) border-box;box-shadow:0 28px 82px #000b,0 0 42px #9b5cff30,0 0 24px #39d9e81c;transform:perspective(1200px) rotateY(-2deg);transition:transform .45s ease,box-shadow .45s ease;animation:hero-visual-glow 6s ease-in-out infinite alternate}.hero-visual:hover{transform:perspective(1200px) rotateY(0) translateY(-5px);box-shadow:0 32px 90px #000c,0 0 52px #9b5cff45,0 0 34px #39d9e82c}.hero-visual img{display:block;width:100%;height:100%;object-fit:cover;object-position:58% center;filter:contrast(1.06) saturate(1.12);transition:transform .6s,filter .6s}.hero-visual:hover img{transform:scale(1.025);filter:contrast(1.08) saturate(1.18)}.hero-visual:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(125deg,#9b5cff20,transparent 43%,#39d9e817);pointer-events:none}.hero-visual:after{content:"";position:absolute;inset:35% 0 0;z-index:1;background:linear-gradient(transparent,#090a10d9);pointer-events:none}.hero-visual-chip{position:absolute;top:16px;left:16px;z-index:2;display:flex;align-items:center;gap:8px;padding:8px 11px;border:1px solid #ffffff30;border-radius:999px;background:#0c0d12ce;backdrop-filter:blur(10px);color:#f7f7fb;font-size:9px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.hero-visual-chip:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px var(--cyan)}.hero-visual-caption{position:absolute;left:18px;right:18px;bottom:16px;z-index:2;color:#f7f7fb;font-size:11px;font-weight:800;letter-spacing:.16em;text-shadow:0 2px 10px #000;text-transform:uppercase}
+.hero-specialties{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 4px}.hero-specialties span{padding:7px 11px;border:1px solid #ffffff22;border-radius:999px;background:#151722b8;color:#deddea;font-size:11px;font-weight:700;letter-spacing:.04em}
+.service-card{position:relative;isolation:isolate;overflow:hidden;min-height:220px;background:transparent}.service-card:before,.service-card:after{content:"";position:absolute;inset:0;border-radius:inherit}.service-card:before{z-index:0;background-image:var(--service-image);background-position:center;background-size:cover;opacity:.53;transition:transform .45s}.service-card:after{z-index:1;background:linear-gradient(115deg,#0c0d12e8 0%,#0c0d12b8 58%,#0c0d127d 100%)}.service-card>*{position:relative;z-index:2}.service-card:hover:before{transform:scale(1.06)}.service-reels{--service-image:url("assets/videos/instagram-reel-02.jpg")}.service-youtube{--service-image:url("assets/videos/long-video-01.jpg")}.service-podcast{--service-image:url("assets/videos/podcast-reel-03.jpg")}
 .hero-proof{animation:badge-float 5s ease-in-out infinite}
 .hero-copy .actions .btn:first-child{animation:cta-glow 4s ease-in-out infinite}
 .video-controls{position:absolute;left:12px;right:12px;bottom:48px;z-index:4;display:flex;flex-wrap:nowrap;align-items:center;gap:8px;padding:9px 10px;border:1px solid #ffffff25;border-radius:13px;background:#0c0d12df;backdrop-filter:blur(12px);color:#fff;opacity:.94;white-space:nowrap}
@@ -86,18 +90,19 @@ section{padding:82px 0;border-top-color:var(--line)}h2{font-size:clamp(32px,4.4v
 .video-controls button:hover,.video-controls button:focus-visible{background:#9b5cff;color:#fff;outline:0}
 .video-controls input[type=range]{flex:1 1 auto;min-width:20px;width:100%;height:4px;margin:0;accent-color:var(--cyan);cursor:pointer}
 .video-time{flex:0 0 auto;min-width:72px;color:#e1e1ec;font-size:10px;font-variant-numeric:tabular-nums;text-align:right}
-.video-project>.video-controls{left:12px;right:12px;bottom:48px;z-index:4;pointer-events:auto}
+.video-project>.video-controls{left:12px;right:12px;bottom:12px;z-index:4;pointer-events:auto}
 .video-project:fullscreen{width:100vw;height:100vh;max-width:none;aspect-ratio:auto;border-radius:0;background-color:var(--bg);background-image:linear-gradient(#0c0d1266,#0c0d12a8),var(--video-cover);background-position:center;background-size:cover;display:grid;place-items:center}
 .video-project:fullscreen .project-video{object-fit:contain;background:transparent}
-@media(max-width:760px){.hero{min-height:0}.hero-layout{grid-template-columns:1fr}.hero-copy h1{font-size:clamp(46px,11vw,78px)}.hero-proof{margin-top:24px}}
+@media(max-width:760px){.hero{min-height:0}.hero-layout{grid-template-columns:1fr}.hero-copy h1{font-size:clamp(46px,11vw,78px)}.hero-proof{margin-top:24px}.hero-visual{max-width:620px;aspect-ratio:16/10;margin-top:8px}}
 @media(max-width:760px){.video-controls{gap:4px;padding:6px 7px}.video-controls button{flex-basis:24px;width:24px;height:24px}.video-time{min-width:52px;font-size:8px}}
-@media(max-width:520px){.project-group .grid,#instagram-reels .grid,#podcast-reels .grid,#storytelling .grid{grid-template-columns:1fr}.video-project{width:100%;justify-self:center}}
-@media(max-width:420px){.video-controls{left:8px;right:8px;bottom:44px;gap:5px;padding:7px}.video-controls button{width:27px;height:27px}.video-time{min-width:62px;font-size:9px}}
+@media(max-width:520px){.project-group .grid,#instagram-reels .grid,#podcast-reels .grid,#storytelling .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.video-project{width:100%;justify-self:stretch}.video-project>.project-info{left:7px;right:7px;top:7px;gap:5px}.video-project .tag{padding:4px 6px;font-size:8px}.video-project .project-caption{padding:4px 6px;font-size:8px;line-height:1.25}.video-controls,.video-project>.video-controls{left:5px;right:5px;bottom:7px;gap:3px;padding:4px}.video-controls button{flex-basis:20px;width:20px;height:20px;border-radius:6px;font-size:9px}.video-controls input[type=range]{min-width:10px}.video-time{min-width:38px;font-size:7px}.service-card{min-height:200px}}
+@media(max-width:380px){.video-time{display:none}.video-controls input[type=range]{min-width:24px}#long-videos .video-project{aspect-ratio:4/3}}
 @keyframes hero-orbit{to{transform:translateY(-50%) rotate(360deg)}}
+@keyframes hero-visual-glow{from{filter:brightness(.96)}to{filter:brightness(1.04)}}
 @keyframes badge-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
 @keyframes cta-glow{0%,100%{box-shadow:0 0 0 #9b5cff00}50%{box-shadow:0 9px 28px #9b5cff44}}
 @media(max-width:760px){.hero:before{width:240px;right:-100px;top:35%;opacity:.7}}
-@media(prefers-reduced-motion:reduce){.hero:before,.hero-proof,.hero-copy .actions .btn:first-child{animation:none}}
+@media(prefers-reduced-motion:reduce){.hero:before,.hero-proof,.hero-copy .actions .btn:first-child,.hero-visual{animation:none;transition:none}}
 .skip-link{position:fixed;left:14px;top:10px;z-index:50;padding:10px 14px;border-radius:10px;background:var(--cyan);color:#081015;font-weight:800;transform:translateY(-160%);transition:transform .2s}
 .skip-link:focus{transform:translateY(0)}
 :focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
@@ -107,10 +112,11 @@ body{overflow-x:hidden}
 </style></head>
 <body><a class="skip-link" href="#work">Skip to content</a><div class="wrap">
 <nav aria-label="Main navigation"><a class="logo" href="#top" aria-label="Kamlesh Kulkarni home">KK<span>.</span> EDITS</a><div class="navlinks" id="navLinks"><a href="#work">Work</a><a href="#instagram-reels">Reels</a><a href="#services">Services</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#about">About</a><a href="#contact">Contact</a></div><button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button></nav>
-<header class="hero" id="top"><div class="hero-layout"><div class="hero-copy"><div class="eyebrow">Available for projects · Freelance Video Editor</div>
+<header class="hero" id="top"><div class="hero-layout"><div class="hero-copy"><div class="eyebrow">Kamlesh Kulkarni · Freelance Video Editor</div>
 <h1>Stories that <span class="gradient">move people.</span></h1>
-<p class="lead">I’m Kamlesh Kulkarni — a freelance video editor building engaging, clean and story-led videos for creators, brands and businesses.</p>
-<div class="actions"><a class="btn" href="#work">Explore my work ↗</a><a class="btn alt" href="#contact">Let’s collaborate</a></div><div class="hero-proof"><strong>50+</strong><span>Projects completed<br>as a freelance video editor</span></div></div></div></header>
+<p class="lead">I shape raw footage into polished Reels, podcast clips, YouTube videos and visual stories—with clear pacing, captions and clean sound.</p>
+<div class="hero-specialties"><span>REELS & SHORTS</span><span>PODCAST EDITING</span><span>YOUTUBE & STORYTELLING</span></div>
+<div class="actions"><a class="btn" href="#work">Explore my work ↗</a><a class="btn alt" href="#contact">Let’s collaborate</a></div><div class="hero-proof"><strong>150+</strong><span>Projects completed<br>as a freelance video editor</span></div></div><div class="hero-visual"><img src="assets/hero-editor.webp" alt="Video editor working at a multi-monitor editing desk" fetchpriority="high"><div class="hero-visual-chip">Editing studio</div><div class="hero-visual-caption">CUT · COLOR · STORY</div></div></div></header>
 <section id="work"><div class="eyebrow">Selected projects</div><h2>Edits that make every second count.</h2><p class="sub">Reels, podcasts, long-form video and visual storytelling.</p>
 <div class="project-group" id="instagram-reels"><h3 class="project-group-title">Instagram & Ad Reels</h3><p class="sub">Short-form social video</p><div class="grid">
 <article class="card project video-project"><video class="project-video" autoplay muted loop playsinline preload="metadata" poster="assets/videos/ad-reel.jpg" tabindex="0" aria-label="Play ad reel"><source src="assets/videos/ad-reel.mp4" type="video/mp4">Your browser does not support MP4 video.</video><div class="project-info"><span class="tag">AD REEL</span><p class="project-caption">Ad edit · hook · pacing</p></div></article>
@@ -132,9 +138,9 @@ body{overflow-x:hidden}
 <article class="card project video-project"><video class="project-video" autoplay muted loop playsinline preload="metadata" poster="assets/videos/podcast-reel-04.jpg" tabindex="0" aria-label="Play podcast reel"><source src="assets/videos/podcast-reel-04.mp4" type="video/mp4">Your browser does not support MP4 video.</video><div class="project-info"><span class="tag">PODCAST REEL</span><p class="project-caption">Podcast edit · captions · sound</p></div></article>
 </div></div></section>
 <section id="services"><div class="eyebrow">What I can edit</div><h2>From raw footage to ready-to-publish.</h2><div class="grid">
-<div class="card"><span class="number">01</span><h3>Instagram Reels & Shorts</h3><p>Fast-paced vertical edits, captions, transitions and platform-ready exports.</p></div>
-<div class="card"><span class="number">02</span><h3>YouTube Videos</h3><p>Structured storytelling, clean cuts, B-roll placement and engaging pacing.</p></div>
-<div class="card"><span class="number">03</span><h3>Podcast Editing</h3><p>Conversation edits, highlights, subtitles and social cut-downs.</p></div>
+<div class="card service-card service-reels"><span class="number">01</span><h3>Instagram Reels & Shorts</h3><p>Fast-paced vertical edits, captions, transitions and platform-ready exports.</p></div>
+<div class="card service-card service-youtube"><span class="number">02</span><h3>YouTube Videos</h3><p>Structured storytelling, clean cuts, B-roll placement and engaging pacing.</p></div>
+<div class="card service-card service-podcast"><span class="number">03</span><h3>Podcast Editing</h3><p>Conversation edits, highlights, subtitles and social cut-downs.</p></div>
 </div></section>
 <section id="experience"><div class="eyebrow">Experience</div><h2>Freelance video editor.</h2><div class="experience-card card"><span class="number">INDEPENDENT · FREELANCE</span><h3>Freelance Video Editor</h3><p>Working with creators, brands and businesses to shape raw footage into clear, engaging YouTube videos, podcast edits and short-form content.</p></div></section>
 <section id="education"><div class="eyebrow">Education</div><h2>My academic journey.</h2><div class="grid education-grid">
