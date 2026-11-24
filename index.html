@@ -159,10 +159,17 @@ body{overflow-x:hidden}
 .experience-card:after{z-index:1;background:linear-gradient(90deg,#151722f5 0%,#151722e8 54%,#15172265 100%)}
 .experience-card>*{position:relative;z-index:2}
 .experience-card:hover:before{transform:scale(1.04);opacity:.94}
+.aboutbox{position:relative;isolation:isolate;overflow:hidden}
+.aboutbox:before,.aboutbox:after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none}
+.aboutbox:before{z-index:0;background:url("assets/visuals/approach-timeline.svg") right center/auto 145% no-repeat;opacity:.76;transition:transform .4s,opacity .4s}
+.aboutbox:after{z-index:1;background:linear-gradient(90deg,#211a3bf5 0%,#1d1d37e8 55%,#11262c68 100%)}
+.aboutbox>*{position:relative;z-index:2}
+.aboutbox:hover:before{transform:scale(1.04);opacity:.92}
 @media(max-width:520px){
   .service-card:after{background:linear-gradient(90deg,#0c0d12f4 0%,#0c0d12d4 56%,#0c0d1260 100%)}
   .education-grid .card:after{background:linear-gradient(90deg,#151722f5 0%,#151722eb 58%,#15172275 100%)}
   .experience-card:after{background:linear-gradient(90deg,#151722f5 0%,#151722eb 58%,#15172275 100%)}
+  .aboutbox:after{background:linear-gradient(90deg,#211a3bf5 0%,#1d1d37ed 60%,#11262c78 100%)}
   .contact{min-height:340px}
   .contact:before{background-size:auto 82%;background-position:right bottom}
   .contact:after{background:linear-gradient(90deg,#21183af5 0%,#21183ad9 68%,#11262c70 100%),linear-gradient(0deg,#11262ced 0%,transparent 50%)}
