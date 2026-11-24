@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="pages" x1="495" y1="148" x2="729" y2="348" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f2f7ff"/><stop offset="1" stop-color="#b5dcf2"/>
+    </linearGradient>
+    <linearGradient id="cover" x1="483" y1="133" x2="729" y2="358" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#39d9e8"/><stop offset="1" stop-color="#4b8dff"/>
+    </linearGradient>
+  </defs>
+  <circle cx="623" cy="236" r="190" fill="#39d9e8" fill-opacity=".1"/>
+  <circle cx="623" cy="236" r="146" stroke="#39d9e8" stroke-opacity=".2" stroke-width="2"/>
+  <path d="M480 160c63-23 113-17 151 13v183c-40-29-91-34-151-12V160Z" fill="url(#cover)"/>
+  <path d="M631 173c40-30 91-36 151-13v184c-59-22-110-17-151 12V173Z" fill="#8b5cf6"/>
+  <path d="M495 179c49-16 86-10 121 13v128c-35-20-74-25-121-9V179Zm272 0c-48-16-85-10-121 13v128c36-20 75-25 121-9V179Z" fill="url(#pages)"/>
+  <path d="M631 192v128" stroke="#6e77a0" stroke-opacity=".35" stroke-width="3"/>
+  <path d="M512 213h78m-78 20h83m-83 20h70m68-40h78m-78 20h83m-83 20h70" stroke="#52627d" stroke-opacity=".3" stroke-width="5" stroke-linecap="round"/>
+  <path d="m582 111 49-26 50 26-50 25-49-25Z" fill="#f1bd69"/>
+  <path d="M599 121v20c19 14 47 14 65 0v-20l-33 17-32-17Z" fill="#d89446"/>
+  <path d="M682 113v29" stroke="#f1bd69" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="682" cy="147" r="7" fill="#f1bd69"/>
+</svg>

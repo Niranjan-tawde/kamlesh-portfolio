@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="school" x1="485" y1="104" x2="740" y2="354" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f7f2ff"/><stop offset="1" stop-color="#cad7ff"/>
+    </linearGradient>
+    <linearGradient id="roof" x1="480" y1="96" x2="746" y2="183" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9b5cff"/><stop offset="1" stop-color="#39d9e8"/>
+    </linearGradient>
+  </defs>
+  <circle cx="620" cy="230" r="192" fill="#9b5cff" fill-opacity=".11"/>
+  <circle cx="620" cy="230" r="149" stroke="#9b5cff" stroke-opacity=".22" stroke-width="2"/>
+  <path d="M485 181 614 105l132 76v18H485v-18Z" fill="url(#roof)"/>
+  <rect x="504" y="199" width="221" height="145" rx="8" fill="url(#school)"/>
+  <path d="M485 346h259" stroke="#39d9e8" stroke-width="12" stroke-linecap="round"/>
+  <rect x="596" y="260" width="42" height="84" rx="20" fill="#7764bd"/>
+  <g fill="#5b83c7">
+    <rect x="526" y="226" width="28" height="30" rx="4"/><rect x="565" y="226" width="20" height="30" rx="4"/>
+    <rect x="655" y="226" width="20" height="30" rx="4"/><rect x="686" y="226" width="24" height="30" rx="4"/>
+  </g>
+  <path d="M523 181h183" stroke="white" stroke-opacity=".82" stroke-width="6" stroke-linecap="round"/>
+  <path d="M614 91v-36m-53 42 21-29m84 29-21-29" stroke="#39d9e8" stroke-opacity=".65" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="614" cy="47" r="8" fill="#39d9e8"/>
+</svg>

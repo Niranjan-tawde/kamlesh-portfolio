@@ -144,8 +144,18 @@ body{overflow-x:hidden}
 .contact:before{z-index:0;background:url("assets/visuals/contact-chat.svg") right center/auto 100% no-repeat;opacity:.92}
 .contact:after{z-index:1;background:linear-gradient(90deg,#21183af5 0%,#21183ad9 47%,#11262c50 100%)}
 .contact>*{position:relative;z-index:2}
+.education-grid .card{position:relative;isolation:isolate;overflow:hidden;background:var(--panel)}
+.education-grid .card:before,.education-grid .card:after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none}
+.education-grid .card:before{z-index:0;background-image:var(--education-image);background-position:right center;background-size:auto 145%;background-repeat:no-repeat;opacity:.72;transition:transform .4s,opacity .4s}
+.education-grid .card:after{z-index:1;background:linear-gradient(90deg,#151722f5 0%,#151722e8 54%,#15172265 100%)}
+.education-grid .card>*{position:relative;z-index:2}
+.education-bba{--education-image:url("assets/visuals/education-bba.svg")}
+.education-hsc{--education-image:url("assets/visuals/education-hsc.svg")}
+.education-ssc{--education-image:url("assets/visuals/education-ssc.svg")}
+.education-grid .card:hover:before{transform:scale(1.04);opacity:.9}
 @media(max-width:520px){
   .service-card:after{background:linear-gradient(90deg,#0c0d12f4 0%,#0c0d12d4 56%,#0c0d1260 100%)}
+  .education-grid .card:after{background:linear-gradient(90deg,#151722f5 0%,#151722eb 58%,#15172275 100%)}
   .contact{min-height:340px}
   .contact:before{background-size:auto 82%;background-position:right bottom}
   .contact:after{background:linear-gradient(90deg,#21183af5 0%,#21183ad9 68%,#11262c70 100%),linear-gradient(0deg,#11262ced 0%,transparent 50%)}
@@ -185,9 +195,9 @@ body{overflow-x:hidden}
 </div></section>
 <section id="experience"><div class="eyebrow">Experience</div><h2>Freelance video editor.</h2><div class="experience-card card"><span class="number">INDEPENDENT · FREELANCE</span><h3>Freelance Video Editor</h3><p>Working with creators, brands and businesses to shape raw footage into clear, engaging YouTube videos, podcast edits and short-form content.</p></div></section>
 <section id="education"><div class="eyebrow">Education</div><h2>My academic journey.</h2><div class="grid education-grid">
-<article class="card"><span class="number">BACHELOR’S DEGREE</span><h3>Bachelor of Business Administration (BBA)</h3><p>2024 pass out</p><p>Vivekanand College, Chh. Sambhajinagar</p></article>
-<article class="card"><span class="number">MARCH 2021</span><h3>Higher Secondary Certificate (HSC)</h3><p>Percentage: 73.6%</p><p>SB College, Chh. Sambhajinagar</p></article>
-<article class="card"><span class="number">2019</span><h3>Secondary School Certificate (SSC)</h3><p>Percentage: 60%</p><p>JKV High School</p></article>
+<article class="card education-bba"><span class="number">BACHELOR’S DEGREE</span><h3>Bachelor of Business Administration (BBA)</h3><p>2024 pass out</p><p>Vivekanand College, Chh. Sambhajinagar</p></article>
+<article class="card education-hsc"><span class="number">MARCH 2021</span><h3>Higher Secondary Certificate (HSC)</h3><p>Percentage: 73.6%</p><p>SB College, Chh. Sambhajinagar</p></article>
+<article class="card education-ssc"><span class="number">2019</span><h3>Secondary School Certificate (SSC)</h3><p>Percentage: 60%</p><p>JKV High School</p></article>
 </div></section>
 <section id="about"><div class="about"><div><div class="eyebrow">A little about me</div><h2>Creative thinking. Thoughtful editing.</h2><p class="sub">I’m Kamlesh Kulkarni, a freelance video editor. I use Adobe Premiere Pro and focus on clear storytelling, strong pacing and edits that fit each platform.</p><div class="skills"><span>Adobe Premiere Pro</span><span>Video Editing</span><span>Reels & Shorts</span><span>YouTube</span><span>Podcast Editing</span><span>Subtitles</span></div></div>
 <div class="aboutbox"><div class="eyebrow">My approach</div><h3>Understand the story.<br>Find the rhythm.<br>Make every cut count.</h3><p class="sub">Open to freelance projects, collaborations and opportunities to grow.</p></div></div></section>
