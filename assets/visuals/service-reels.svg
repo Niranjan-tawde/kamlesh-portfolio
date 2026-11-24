@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="30" x2="690" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#24153d"/><stop offset=".58" stop-color="#16152a"/><stop offset="1" stop-color="#122631"/>
+    </linearGradient>
+    <linearGradient id="ig" x1="550" y1="86" x2="700" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffb347"/><stop offset=".48" stop-color="#f04b8b"/><stop offset="1" stop-color="#8954ff"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="540" y1="270" x2="701" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#37d9e8" stop-opacity=".82"/><stop offset="1" stop-color="#9b5cff" stop-opacity=".3"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h800v450H0z"/>
+  <circle cx="666" cy="212" r="210" fill="#9b5cff" fill-opacity=".12"/>
+  <circle cx="744" cy="54" r="102" fill="#39d9e8" fill-opacity=".1"/>
+  <g opacity=".3" stroke="#b9a0ff">
+    <path d="M470 60h262M450 82h300M476 104h257M472 366h268M454 389h296"/>
+    <circle cx="504" cy="232" r="135"/><circle cx="504" cy="232" r="166"/>
+  </g>
+  <rect x="532" y="28" width="204" height="394" rx="34" fill="#090b13" stroke="#b99aff" stroke-opacity=".82" stroke-width="4"/>
+  <rect x="546" y="48" width="176" height="348" rx="24" fill="#151625"/>
+  <rect x="552" y="55" width="164" height="212" rx="18" fill="url(#screen)"/>
+  <path d="m552 224 58-57 37 36 27-28 42 43v49H552z" fill="#101426" fill-opacity=".8"/>
+  <rect x="588" y="102" width="92" height="92" rx="26" fill="url(#ig)"/>
+  <rect x="610" y="124" width="48" height="48" rx="15" stroke="white" stroke-width="7"/>
+  <circle cx="634" cy="148" r="11" stroke="white" stroke-width="6"/>
+  <circle cx="656" cy="126" r="4" fill="white"/>
+  <rect x="563" y="283" width="108" height="11" rx="5.5" fill="#ffffff" fill-opacity=".82"/>
+  <rect x="563" y="303" width="132" height="7" rx="3.5" fill="#ffffff" fill-opacity=".18"/>
+  <rect x="563" y="325" width="142" height="19" rx="9.5" fill="#242236"/>
+  <rect x="563" y="325" width="86" height="19" rx="9.5" fill="url(#ig)"/>
+  <rect x="563" y="356" width="142" height="7" rx="3.5" fill="#ffffff" fill-opacity=".16"/>
+  <path d="M690 34h15" stroke="#39d9e8" stroke-width="4" stroke-linecap="round"/>
+</svg>

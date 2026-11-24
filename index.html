@@ -133,6 +133,23 @@ body{overflow-x:hidden}
   .hero-visual:before{display:none}
   .hero-visual-chip{right:5vw;top:14px}
 }
+.service-card:before{background-position:right center;opacity:.84;filter:saturate(1.16);transition:transform .45s,filter .45s}
+.service-card:after{background:linear-gradient(90deg,#0c0d12f0 0%,#0c0d12d8 46%,#0c0d1266 100%)}
+.service-reels{--service-image:url("assets/visuals/service-reels.svg")}
+.service-youtube{--service-image:url("assets/visuals/service-youtube.svg")}
+.service-podcast{--service-image:url("assets/visuals/service-podcast.svg")}
+.service-card:hover:before{filter:saturate(1.32) brightness(1.08)}
+.contact{position:relative;isolation:isolate;overflow:hidden;min-height:320px}
+.contact:before,.contact:after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none}
+.contact:before{z-index:0;background:url("assets/visuals/contact-chat.svg") right center/auto 100% no-repeat;opacity:.92}
+.contact:after{z-index:1;background:linear-gradient(90deg,#21183af5 0%,#21183ad9 47%,#11262c50 100%)}
+.contact>*{position:relative;z-index:2}
+@media(max-width:520px){
+  .service-card:after{background:linear-gradient(90deg,#0c0d12f4 0%,#0c0d12d4 56%,#0c0d1260 100%)}
+  .contact{min-height:340px}
+  .contact:before{background-size:auto 82%;background-position:right bottom}
+  .contact:after{background:linear-gradient(90deg,#21183af5 0%,#21183ad9 68%,#11262c70 100%),linear-gradient(0deg,#11262ced 0%,transparent 50%)}
+}
 </style></head>
 <body><a class="skip-link" href="#work">Skip to content</a><div class="wrap">
 <nav aria-label="Main navigation"><a class="logo" href="#top" aria-label="Kamlesh Kulkarni home">KK<span>.</span> EDITS</a><div class="navlinks" id="navLinks"><a href="#work">Work</a><a href="#instagram-reels">Reels</a><a href="#services">Services</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#about">About</a><a href="#contact">Contact</a></div><button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button></nav>

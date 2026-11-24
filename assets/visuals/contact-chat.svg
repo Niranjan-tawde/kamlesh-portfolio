@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" fill="none">
+  <defs>
+    <linearGradient id="green" x1="532" y1="75" x2="760" y2="340" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#63f3a5"/><stop offset="1" stop-color="#16b975"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="395" y1="126" x2="661" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#aa75ff"/><stop offset="1" stop-color="#526cff"/>
+    </linearGradient>
+  </defs>
+  <circle cx="661" cy="236" r="202" fill="#39d9e8" fill-opacity=".08"/>
+  <circle cx="657" cy="235" r="158" stroke="#39d9e8" stroke-opacity=".2" stroke-width="2"/>
+  <path d="M526 111c0-29 24-53 53-53h164c29 0 53 24 53 53v111c0 29-24 53-53 53h-82l-59 47v-47h-23c-29 0-53-24-53-53z" fill="url(#green)" fill-opacity=".94"/>
+  <path d="M578 139c5-7 11-7 16-3l16 18c5 5 4 11 0 16l-9 11c13 25 30 41 54 53l11-11c5-5 11-5 17-1l17 15c6 5 6 11 2 17-10 15-25 22-42 16-49-16-88-55-105-104-6-17 8-29 23-37z" fill="#fff"/>
+  <path d="M400 224c0-30 24-54 54-54h125c30 0 54 24 54 54v83c0 30-24 54-54 54h-65l-54 44v-44h-6c-30 0-54-24-54-54z" fill="url(#purple)" stroke="#ffffff" stroke-opacity=".34" stroke-width="3"/>
+  <path d="M450 255h132m-132 24h98m-98 24h115" stroke="white" stroke-opacity=".9" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="743" cy="359" r="10" fill="#39d9e8"/>
+  <circle cx="775" cy="359" r="6" fill="#9b5cff"/>
+  <circle cx="722" cy="391" r="5" fill="#39d9e8" fill-opacity=".8"/>
+</svg>
