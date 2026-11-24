@@ -110,6 +110,29 @@ section{padding:82px 0;border-top-color:var(--line)}h2{font-size:clamp(32px,4.4v
 html{scroll-padding-top:86px}
 body{overflow-x:hidden}
 @media(max-width:900px){nav{margin:0 calc((100% - 100vw)/2);padding:12px 5%;gap:12px}.menu-toggle{display:flex}.navlinks{display:none;position:absolute;left:5%;right:5%;top:calc(100% + 1px);padding:12px;background:#151722;border:1px solid var(--line);border-radius:0 0 16px 16px;box-shadow:0 18px 32px #0009;flex-direction:column;gap:4px;z-index:22}.navlinks.is-open{display:flex}.navlinks a{padding:11px 8px;font-size:14px}}
+/* Large, full-width hero image with readable copy layered over its dark side */
+.hero{width:100vw;margin-left:calc((100% - 100vw)/2);min-height:min(760px,calc(100svh - 62px));padding:0;display:block;overflow:hidden;background:#0c0d12}
+.hero-layout{width:min(1120px,90%);max-width:none;min-height:min(760px,calc(100svh - 62px));margin:0 auto;display:flex;align-items:center;position:relative;isolation:isolate}
+.hero-copy{position:relative;z-index:3;width:min(550px,52%);padding:68px 0}
+.hero-copy h1{max-width:650px;text-wrap:balance}
+.hero-visual{position:absolute;z-index:-1;left:auto;right:0;top:50%;width:min(82vw,1180px);height:auto;aspect-ratio:16/9;border:0;border-radius:0;transform:translateY(-50%);background:#0c0d12;box-shadow:none;animation:none;overflow:hidden}
+.hero-visual:hover{transform:translateY(-50%);box-shadow:none}
+.hero-visual img{object-fit:contain;object-position:center;filter:brightness(.92) saturate(1.06)}
+.hero-visual:hover img{transform:none;filter:brightness(.92) saturate(1.06)}
+.hero-visual:before{background:linear-gradient(90deg,#0c0d12e8 0%,#0c0d12a8 22%,#0c0d1240 42%,transparent 62%),linear-gradient(0deg,#0c0d12a8,transparent 38%);animation:none}
+.hero-visual:after{display:none}
+.hero-visual-chip{left:auto;right:max(5vw,calc((100vw - 1120px)/2));top:24px}
+@media(max-width:760px){
+  .hero{min-height:0;padding:0}
+  .hero-layout{width:100%;min-height:0;padding:0;display:flex;flex-direction:column;align-items:stretch}
+  .hero-copy{order:2;width:90%;max-width:620px;margin:0 auto;padding:28px 0 54px}
+  .hero-copy h1{font-size:clamp(46px,11vw,76px)}
+  .hero-visual{position:relative;order:1;left:auto;right:auto;top:auto;width:100%;max-width:none;aspect-ratio:16/9;transform:none;margin:0;z-index:0}
+  .hero-visual:hover{transform:none}
+  .hero-visual img{object-fit:contain;object-position:center;filter:none}
+  .hero-visual:before{display:none}
+  .hero-visual-chip{right:5vw;top:14px}
+}
 </style></head>
 <body><a class="skip-link" href="#work">Skip to content</a><div class="wrap">
 <nav aria-label="Main navigation"><a class="logo" href="#top" aria-label="Kamlesh Kulkarni home">KK<span>.</span> EDITS</a><div class="navlinks" id="navLinks"><a href="#work">Work</a><a href="#instagram-reels">Reels</a><a href="#services">Services</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#about">About</a><a href="#contact">Contact</a></div><button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button></nav>
